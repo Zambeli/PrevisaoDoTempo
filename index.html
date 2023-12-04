@@ -6,6 +6,7 @@
     <title>Previsão Do Tempo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script defer src="./main.js"></script>
 </head>
 <body>
     <main>
@@ -15,16 +16,16 @@
                 <button class="nav__button"><img class="nav__lupa" src="./lupaPesquisa.svg" alt=""></button>
             </div>
             <div class="cidade">
-                <p>Rosario do Sul</p>
-                <p>Rio Grande do Sul</p>
+                <p class="cidade__nome">Rosario do Sul</p>
+                <p class="estado">Rio Grande do Sul</p>
                 <h1 class="cidade__temperatura">31°C</h1>
             </div>
             <img class="imagem__clima" src="./clima.webp" alt="">
             <div class="informacoes">
-                <p>Humidade : <span> 96%</span> </p>
-                <p>Velocidade do vento : <span> 3,6km/h</span></p>
+                <p>Humidade : <span class="humidade"> 96%</span> </p>
+                <p>Velocidade do vento : <span class="vento"> 3,6km/h</span></p>
                 <p>Horário</p>
-                <h3>2023-12-02 10:46</h3>
+                <h3 class="horario">2023-12-02 10:46</h3>
             </div>
         </div>
     </main>
