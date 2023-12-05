@@ -37,6 +37,8 @@ function preencherInformacoes (dados,cidade) {
     const humidade = dados.current.humidity
     const vento = dados.current.wind_kph
     const horario = dados.location.localtime
+    const informacoes = document.querySelector('.informacoes')
+    const clima = document.querySelector('.imagem__clima')
 
     document.querySelector('.horario').innerHTML = horario
     document.querySelector('.vento').innerHTML = `${vento}km/h`
@@ -50,7 +52,14 @@ function preencherInformacoes (dados,cidade) {
 
     if (imagem == raio) {
         container.style.backgroundImage = "url('./rain.jpg')";
+    } else {
+        container.style.backgroundImage = "url('./sol.jpg')";
     }
+
+    informacoes.style.display = 'flex';
+    clima.style.display = 'flex'
+
+
 
    
 }
